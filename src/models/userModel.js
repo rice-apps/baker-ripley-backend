@@ -4,14 +4,14 @@ var mongoose     = require('mongoose')
 require('../db')
 
 var UserSchema = new Schema({
-    netid:{type: String},
-    firstName: {type: String},
-    lastName: {type: String},
-    minHour: Number,
-    maxHour: Number,
-    totalHours: Number
+    homeZipCode: Number,
+    workZipCode: Number,
+    gender: {type: String},
+    dateOfBirth: Number,
+    ethnicity: {type: Array},
+    householdSize: number,
+    children: {type: Boolean},
 })
-
 
 var User = mongoose.model("User", UserSchema)
 
