@@ -9,7 +9,7 @@ var UserSchema = new Schema({
     gender: {type: String},
     dateOfBirth: Number,
     ethnicity: {type: Array},
-    householdSize: number,
+    householdSize: Number,
     children: {type: Boolean},
 })
 
