@@ -18,7 +18,11 @@ const getUsers = (req, res) => {
         }
     })
 }
+
+// GET call for our backend
+// send requirements and sends back response
 const getUserBR = (req, res) => {
+    // need to import user model from schemas page 
     const id = req.params.id
     console.log(id)
     UserBR.find({}).exec((err, user) => {
@@ -83,6 +87,8 @@ const getUser = (req, res) => {
 module.exports = app => {
     app.get('/users', getUsers)
     app.get('/user/:netid?', getUser)
+    // postman - localhost:3000:/server port gateway port
+    // :id? = variable
     app.get('/userbr/:id?', getUserBR)
     app.get('/netids', getNetIDs)
     // app.get('/user/hours/:netid', getTotalHours)

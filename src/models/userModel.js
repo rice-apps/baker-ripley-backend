@@ -53,8 +53,9 @@ var UserBRSchema = new Schema({
 
 
 var User = mongoose.model("User", UserSchema)
+// need to specify collection in order to connect
+// in this case, collection is profile
 var UserBR = mongoose.model("UserBR", UserBRSchema, 'profile')
-
 
 
 exports.user = User
