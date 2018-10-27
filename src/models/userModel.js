@@ -1,5 +1,4 @@
 var mongoose     = require('mongoose')
-//    , mongoosastic = require('mongoosastic')
     , Schema       = mongoose.Schema
 require('../db')
 
@@ -29,28 +28,6 @@ var UserBRSchema = new Schema({
     phone: {type: String},
     socialMedia: {type: String}
 })
-
-// {
-//     "_id": {
-//         "$oid": "5bafe1a8e7179a358dc24cee"
-//     },
-//     "demographics": {
-//         "dob": "03-15-1962",
-//         "ethnicity": "White",
-//         "zipcode": {
-//             "home": "18503",
-//             "work": "18503"
-//         },
-//         "gender": "Male"
-//     },
-//     "firstName": "Michael",
-//     "lastName": "Scott",
-//     "UID": 1,
-//     "email": "michaelscott@theoffice.com",
-//     "phone": "0123456789",
-//     "socialMedia": "facebook"
-// }
-
 
 var User = mongoose.model("User", UserSchema)
 // need to specify collection in order to connect
