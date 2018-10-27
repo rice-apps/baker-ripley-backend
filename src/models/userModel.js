@@ -19,9 +19,9 @@ var UserBRSchema = new Schema({
     	zipcode: {
     		home: {type: String},
     		work: {type: String}
-    	},
+    	    },
     	gender: {type: String}
-	},
+    	},
 	firstName: {type: String},
     lastName: {type: String},
     id: Number,
