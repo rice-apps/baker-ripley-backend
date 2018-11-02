@@ -15,11 +15,12 @@ function getData(url) {
 
         // Begin accessing JSON data here
         var data = JSON.parse(request.responseText);
-
+        
         // 200 = successful request
         if (request.status >= 200 && request.status < 400) {
             // console.log(this);
             // console.log(data);
+
             return getAnswers(data);
             // return data;
         } else {
