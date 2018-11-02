@@ -182,4 +182,3 @@ function getAnswers(jsonData) {
 //             console.log(pretty);
 //         }
 //     }
-
