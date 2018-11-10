@@ -21,18 +21,18 @@ function  getData(url) {
     };
 
     request.send();
-    
+
 }
 getData(typeFormUrl);
 
 function getAnswers(jsonData) {
+  // console.log(jsonData);
     for (var item in jsonData) {
         if (jsonData.hasOwnProperty(item) && item === "items") {
             // console.log(jsonData[item]);
             for (var x in jsonData[item]) {
                 // console.log(x);
                 if (jsonData[item].hasOwnProperty(x)) {
-
                     // console.log(jsonData[item][x])
                     for (var answer in jsonData[item][x]) {
                         if (jsonData[item][x].hasOwnProperty(answer) && answer === "answers") {
