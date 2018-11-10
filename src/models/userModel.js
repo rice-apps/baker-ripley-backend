@@ -14,11 +14,8 @@ var UserSchema = new Schema({
 var UserBRSchema = new Schema({
     demographics:{
     	dob: {type: String},
-    	ethnicity: {type: String},
-    	zipcode: {
-    		home: {type: String},
-    		work: {type: String}
-    	    },
+    	ethnicity: {type: [String]},
+    	zipcode: {type: String},
     	gender: {type: String}
     	},
 	firstName: {type: String},
